@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 </head>
 <body>
@@ -40,6 +41,12 @@
             <a class="header__navbar__link" href="#my_projects">MY PROJECTS</a>
             <a class="header__navbar__link" href="#contact">CONTACT</a>
         </nav>
+
+
+        <!-- Icon list -->
+         <div class="header__icon-list__monbile">
+            <i class="bi bi-list"></i>
+         </div>
         
     </header>
 
@@ -48,7 +55,7 @@
 
     <main class="main" id="home">
         <div class="main__video">
-            <video class="video" src="./image/video-4.mp4" autoplay muted loop></video>
+            <video class="video" src="./image/video-4.mp4" autoplay muted loop playsinline></video>
             <div class="main__container__text">
                 <h2 class="main__text">Welcome to My Portfolio.</h2>
                 <p class="main__text">Nice to meet you! I'm Lucas,<br><span>Software Developer.</span></p>
@@ -60,22 +67,20 @@
     <!-- Abuot me -->
     
     <article class="about-me" id="abuot_me">
-
-       
-
-            <!-- Image -->
-            
-                <img class="about-me__img" src="./image/Foto-Lucas.png" alt="">
-          
-            
-               
-             <!-- Description main -->
-           
-               <p class="about-me__text">I am a web developer with experience in creating interactive and functional interfaces using HTML, CSS, JavaScript and frameworks such as Bootstrap for modern responsive design. I also have a background in C#, which allows me to tackle software projects and complement my web development skills. My focus is on creating efficient, streamlined and aesthetically appealing user experiences, always following best development practices.</p>
-
+        <!-- Container -->
+        <section class="about-me__container-img">
+            <!-- Video as background -->
+            <video class="about-me__video" src="./image/video-1.mp4" autoplay muted loop playsinline></video>
+            <!-- Image on top of the video -->
+            <img class="about-me__img" src="./image/Foto-Lucas.png" alt="">
+        </section>
         
-        
+        <!-- Description -->
+        <div class="about-me__container__text">
+            <p class="about-me__text">I am a web developer with experience in creating interactive and functional interfaces using HTML, CSS, JavaScript and frameworks such as Bootstrap for modern responsive design. I also have a background in C#, which allows me to tackle software projects and complement my web development skills. My focus is on creating efficient, streamlined and aesthetically appealing user experiences, always following best development practices.</p>
+        </div>
     </article>
+    
 
 
     
@@ -84,9 +89,9 @@
         <img class="gallery__img" src="./image/html-120.png" alt="">
         <img class="gallery__img" src="./image/css-120.png" alt="">
         <img class="gallery__img" src="./image/javascript-120.png" alt="">
-        <img class="gallery__img" src="./image/c-120.png" alt="">
         <img class="gallery__img" src="./image/boostrap-120.png" alt="">
         <img class="gallery__img" src="./image/react-120.png" alt="">
+        <img class="gallery__img" src="./image/nodo-js-120.png" alt="">
         
      </section>
 
@@ -97,29 +102,29 @@
      <section class="conocimientos">
 
         <div class="conocimientos__container__img" >
-            <img class="conocimientos__img" src="./image/codigo-chile.jpg" alt="">
+            <img class="conocimientos__img" src="./image/app-clima.jpeg" alt="">
             <h2 class="conocimientos__title">Proyecto 1</h2>
-            <p class="conocimientos__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eos incidunt culpa sequi. Ratione odit necessitatibus iste doloremque nemo quidem vitae, neque impedit ipsum illo, accusamus adipisci totam! Quibusdam, quia.</p>
+            <p class="conocimientos__text">Desarrollada con JavaScript, esta aplicación permite a los usuarios consultar el clima actual de cualquier ciudad en tiempo real. Utiliza una API para obtener datos meteorológicos como la temperatura, la humedad y las condiciones atmosféricas. La interfaz es intuitiva y está diseñada para proporcionar una experiencia de usuario fluida, con actualizaciones rápidas y precisas.</p>
             <div class="conocimientos__container__link">
-                <a class="conocimientos__link" href="#">Repositorio</a>
+                <a class="conocimientos__link" href="https://github.com/Lucas-Montegrosso/app-clima" target="_blank">Repositorio</a>
             </div>
         </div>       
 
         <div class="conocimientos__container__img">
-            <img class="conocimientos__img" src="./image/codigo-toyota.jpg" alt="">
+            <img class="conocimientos__img" src="./image/juego de adivinar numero.jpeg" alt="">
             <h2 class="conocimientos__title">Proyecto 2</h2>
-            <p class="conocimientos__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ea, voluptatum nobis similique numquam cum quis excepturi, reiciendis laudantium earum dolor vitae corrupti accusamus! Ex praesentium minima aperiam officiis cumque.</p>
+            <p class="conocimientos__text">Este juego interactivo, desarrollado con JavaScript, desafía a los usuarios a adivinar un número secreto dentro de un rango establecido. El jugador recibe pistas si su suposición es demasiado alta o baja, brindando una experiencia entretenida y dinámica. La aplicación incorpora lógica de validación de entradas y retroalimentación visual para mejorar la interacción y hacer el juego más intuitivo.</p>
             <div class="conocimientos__container__link">
-                <a class="conocimientos__link" href="#">Repositorio</a>
+                <a class="conocimientos__link" href="https://github.com/Lucas-Montegrosso/Juego-de-adivinar-numero" target="_blank">Repositorio</a>
             </div>
         </div>
 
         <div class="conocimientos__container__img">
-            <img class="conocimientos__img" src="./image/codigo-zarate.jpg" alt="">
+            <img class="conocimientos__img" src="./image/validacion de formulario.jpeg" alt="">
             <h2 class="conocimientos__title">Proyecto 3</h2>
-            <p class="conocimientos__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae doloribus voluptates quia placeat dignissimos dolore quos modi, recusandae, sapiente qui libero ipsum rem, magni quis delectus perferendis quasi facilis accusantium?</p>
+            <p class="conocimientos__text">Esta aplicación de validación de formularios, creada con JavaScript, garantiza que los datos ingresados por los usuarios sean correctos antes de ser enviados. Implementa verificaciones como la obligatoriedad de campos, formato de correo electrónico, longitud de texto y contraseñas seguras. Además, ofrece retroalimentación en tiempo real con mensajes de error personalizados, mejorando la experiencia del usuario.</p>
             <div class="conocimientos__container__link">
-                <a class="conocimientos__link" href="#">Repositorio</a>
+                <a class="conocimientos__link" href="https://github.com/Lucas-Montegrosso/Validacion-de-formulario" target="_blank">Repositorio</a>
             </div>
         </div>
 
@@ -127,11 +132,11 @@
 
 
      <!-- Contact -->
-     <section class="contact" id="contact">
+    <section class="contact" id="contact">
         <h2 class="contact__text">Contact</h2>
     
         <form class="contact__form" action="https://formsubmit.co/lucas.montegrosso@gmail.com" method="POST">
-            <div class="contact__name">
+            <div class="contact__input">
                 <label for="name">Name</label>
                 <input type="text" placeholder="Enter your name" name="name" id="name" required>
             </div>
@@ -143,7 +148,7 @@
                 <label for="coments">Comment</label>
                 <textarea class="contact__textarea" placeholder="Enter your comment" required name="coments" id="coment"></textarea>
             </div>
-            <input type="submit" value="Send" class="contact__btn">
+            <button class="contact__btn">Send</button>
 
             <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
 
@@ -164,10 +169,8 @@
 
         <!-- Buttons -->
         <div class="footer_btn">
-            <a class="footer__link" href="#">Whatsapp</a>
-            <a class="footer__link" href="#">Instagram</a>
-            <a class="footer__link" href="#">Linkedin</a>
-            <a class="footer__link" href="#">Facebook</a>
+            <a class="footer__link" href="https://github.com/Lucas-Montegrosso" target="_blank">Github</a>
+            <a class="footer__link" href="https://www.linkedin.com/in/lucas-montegrosso/" target="_blank">Linkedin</a>
         </div>
         
      </footer>
