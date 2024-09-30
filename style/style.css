@@ -250,13 +250,14 @@ html{
 
 .gallery__img{
     width: 15%;
+    transition: all 0.5s ease-out;
 }
 
 .gallery__img:hover{
     background-color: #1c22de;
     border: 1px, solid, white;
     border-radius: 10px;   
-    transition: all 1s;
+    transition: all 0.1s ease-in;
 }
 
 
@@ -304,7 +305,7 @@ html{
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
-    transition: all 1s;
+    transition: all 0.5s;
     cursor: pointer;
 }
 
@@ -402,7 +403,7 @@ html{
     border-radius: 5px;
     margin: 10px 0px 0px 5px;
     width: 35%;
-    transition: all 1s; 
+    transition: all 0.5s; 
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -441,7 +442,7 @@ html{
     padding: 5px;
     border-radius: 5px;
     font-size: 80%;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .footer__link:hover{
